@@ -12,6 +12,7 @@ import XCTest
 class Jenkins_SampleTests: XCTestCase {
 
     override func setUp() {
+        print("Test")
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
 
@@ -21,7 +22,7 @@ class Jenkins_SampleTests: XCTestCase {
 
     func testExample() {
         // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        XCTAssertEqual(2, 2, "Conversion for 2 is incorrect")
     }
 
     func testPerformanceExample() {
